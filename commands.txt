@@ -55,3 +55,7 @@ git config --global alias.unstage 'restore --staged --' -> used to unstaged file
 git branch <new_branch_name>-> to create new branch
 git checkout <new_branch_name>-> to switch to new branch
 git branch -D <branch_name>-> to delete a branch
+git branch-> use to see all the branches created 
+git branch -M <new_name>-> to rename the default name of main(M) branch
+git merge <branch_name>-> to merge the <branch_name> in present branch
+
