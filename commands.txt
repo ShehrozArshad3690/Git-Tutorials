@@ -1,0 +1,45 @@
+git-> version control system(software)
+github->hosting website to store git repositories
+git config --global user.name  "..."
+git config --global user.email "..."
+git config --list
+git config --global core.editor  "..."
+commit->snapshot
+staging area->the area where those type of files are stored which we want to actually commit
+git directory(repository)->(.git) folder
+git status-> to check if there is git repository there
+git init-> to make the directory as git repository(.git->which have all the tracks)
+git add <file>-> to add a particular file into staging area(it will start tracking)
+git add->add files into tracking and then into staging area(by modifying the files, files come back into tracking area and becomes unstaged)
+git rm --cached <file>-> to remove a particular file from staging area and tracking area(basically to untrack)
+git add --a-> to add all the files into the staging area
+git rm --cached --a-> to remove all the files from staging area and tracking area(basically to untrack)
+git commit -m "message"-> to commit without opening the core editor
+git commit->to commit any message with an open editor
+git log-> used to check all the commits with all info
+rm -rf-> is used to remove file/directory forcefully
+rm -rf .git-> to used to change git repository into normal directory(as git directory is deleted)
+git clone-> used to clone a git repository into your local directory
+pwd->present working directory
+ls->list content
+cd->change directory
+repository->the directory which git software is tracking
+touch->used to create files and folders
+touch .gitignore->write the file name or folder you wanna ignore->to ignore error in untrack
+git diff->compares the working directory(red and may be modified->untracked) from staging area(green and unmodified->tracked)
+git diff --staged->compares the staging area(green) from previous commit(red)
+git commit -a -m "direct commit"->is used to staged all tracked files(not untracked files) and directly commit
+git rm filename->used to delete the files
+git mv filename newfilename-> used to rename the files
+git log -p-> used to get the logs with all the commits along with their difference or changes(add/remove) in it
+git log -p -3-> used to get logs of 3 commits with their differences
+git log --stat-> used to see the statistics(short summary of commits) of logs
+git log --pretty=oneline->used to see all commits in one line
+git log --pretty=short-> used to see all commits with short info
+git log --pretty=full-> used to see all commits with full info
+git log --since=2.days->used to see commits with respect to time(previous 2 days)
+git log --since=2.months->previus 2 months
+git log --since=2.years-> previous 2 years
+git log --pretty=format:"%h -- %an"-> show logs with commit hash(h) in short form and author name(an)
+git log --pretty=format:"%h -- %ae"-> show logs with commit hash(h) in short form and author email(ae)
+git commit --amend->used to change in commit messages
