@@ -11,7 +11,7 @@ git status-> to check if there is git repository there
 git init-> to make the directory as git repository(.git->which have all the tracks)
 git add <file>-> to add a particular file into staging area(it will start tracking)
 git add->add files into tracking and then into staging area(by modifying the files, files come back into tracking area and becomes unstaged)
-git rm --cached <file>-> to remove a particular file from staging area and tracking area(basically to untrack)
+git rm --cached <file>-> to remove a particular file from staging area and then from tracking area(basically to untrack)
 git add --a-> to add all the files into the staging area
 git rm --cached --a-> to remove all the files from staging area and tracking area(basically to untrack)
 git commit -m "message"-> to commit without opening the core editor
@@ -42,4 +42,16 @@ git log --since=2.months->previus 2 months
 git log --since=2.years-> previous 2 years
 git log --pretty=format:"%h -- %an"-> show logs with commit hash(h) in short form and author name(an)
 git log --pretty=format:"%h -- %ae"-> show logs with commit hash(h) in short form and author email(ae)
-git commit --amend->used to change in commit messages
+git commit --amend->used to change in commit
+git restore <file>..." -> to unmodify changes in working directory
+git restore --staged <file>..." -> to unstage the files
+git remote add origin <repository link> -> add remote link of repository in origin(named)
+git remote -v-> used to see urls named as origin for push and pull
+git push -u origin master -> used to push master repo from your local pc to remote url -u named as origin
+alias is used to make lengthy commands short
+git config --global alias.st status->this shows that we make status command abreviated as st so we just type git st instead of git status
+git config --global alias.cm commit-> commit abbreviated as cm
+git config --global alias.unstage 'restore --staged --' -> used to unstaged file as abbreviation of unstage rather than using full command
+git branch <new_branch_name>-> to create new branch
+git checkout <new_branch_name>-> to switch to new branch
+git branch -D <branch_name>-> to delete a branch
